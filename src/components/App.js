@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Chart from './Chart/Chart';
+import ButtonElement from './Button/Button';
+import PageTemplate from './PageTemplate/PageTemplate';
 
 
 class App extends Component{
     render(){
         return(
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path='/' component={Chart} />
-                </Switch>
-            </BrowserRouter>
+            <PageTemplate>
+                <ButtonElement />
+                <Chart />
+            </PageTemplate>
         )
     }
 }

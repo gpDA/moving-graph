@@ -4,4 +4,3 @@ yarn add react-bootstrap bootstrap
 yarn add node-sass
 yarn add moment react-moment
 yarn add moment-range
-yarn add react-pure-lifecycle

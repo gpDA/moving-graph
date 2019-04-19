@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import Chart from './Chart/Chart';
-// import ButtonIncrement from './ButtonElement/ButtonIncrement';
-// import ButtonDecrement from './ButtonElement/ButtonDecrement';
 import PageTemplate from './PageTemplate/PageTemplate';
 import Counters from "./ButtonElement/counters";
 
 
 class App extends Component{
-    // constructor(props){
-    //     super(props);
-    // }
+    // initial state
+    // id:1 -> line1 / id:2 -> line2 / id:3 -> line3
     state = {
         counters: [
             { id: 1, value: 1},
@@ -18,13 +15,8 @@ class App extends Component{
         ]
     }
 
+    // decrement function
     handleIncrement = counter => {
-        // console.log(this.state.line1)
-        // const key = e.target.id;
-        // console.log(key, e.target.id);
-        // this.setState({
-        //     [key]: this.state.line1 + 1
-        // })
         const counters = [...this.state.counters];
         const index = counters.indexOf(counter);
         counters[index] = {...counter};
@@ -32,6 +24,7 @@ class App extends Component{
         this.setState({ counters });
     }
 
+    // increment function
     handleDecrement = counter => {
         const counters = [...this.state.counters];
         const index = counters.indexOf(counter);
@@ -40,15 +33,7 @@ class App extends Component{
         this.setState({ counters });
     }
 
-    // handlePlusClick = (e) => {
-    //     this.setState(prevState => ({
-    //         // [e.target.id] : prevState.e.target.id + 1
-    //     }))
-    // }
-
     render(){
-        // state 1 2 3
-        // const { handleMinusClick, handlePlusClick} = this;
         return(
             <PageTemplate>
                 <Counters counters={this.state.counters} onIncrement={this.handleIncrement} onDecrement={this.handleDecrement}/>

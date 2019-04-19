@@ -1,5 +1,11 @@
 # how to run
 
-    first I think it as giving id like line1plus / line1minus 
-    and then think that line1 as ids to tell which state to update BUT DUPLICATED
-    so I guess a value instead
+`cd moving-graph`
+`yarn start`
+
+# Thank you
+
+Thank you colin for the help earlier. Hope to hear from you soon and if you have any questions regarding the project, please let me know. I will try to answer your questions as soon as possible.
+
+Best,
+GP LEE

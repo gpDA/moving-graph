@@ -2,3 +2,5 @@ yarn create react-app moving-graph
 yarn add react-chartjs-2 chart.js
 yarn add react-bootstrap bootstrap
 yarn add node-sass
+yarn add moment react-moment
+yarn add moment-range

@@ -12,9 +12,9 @@ class App extends Component{
     // }
     state = {
         counters: [
-            { id: 1, value: 0},
-            { id: 2, value: 0},
-            { id: 3, value: 0}
+            { id: 1, value: 1},
+            { id: 2, value: 2},
+            { id: 3, value: 3}
         ]
     }
 
@@ -51,10 +51,8 @@ class App extends Component{
         // const { handleMinusClick, handlePlusClick} = this;
         return(
             <PageTemplate>
-                {/* <ButtonDecrement onDecrement={this.handleMinusClick} /> */}
                 <Counters counters={this.state.counters} onIncrement={this.handleIncrement} onDecrement={this.handleDecrement}/>
-                {/* <ButtonIncrement onClick={(e) => handleMinusClick(e)} /> */}
-                <Chart />
+                <Chart counters={this.state.counters} />
             </PageTemplate>
         )
     }

@@ -1,0 +1,21 @@
+import React, { Component } from 'react'
+import ButtonHandler from './buttonHandler';
+
+class Counters extends Component{
+    render(){
+        return (
+            <div>
+                {this.props.counters.map(counter => (
+                    <ButtonHandler
+                    key={counter.id}
+                    onIncrement={this.props.onIncrement}
+                    onDecrement={this.props.onDecrement}
+                    counter={counter}
+                    />
+                ))}
+            </div>
+        )
+    }
+}
+
+export default Counters;

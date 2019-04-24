@@ -23,6 +23,9 @@ class Chart extends Component{
     }
 
     // updateArray with updated values
+
+    // APPEND the updated new value to the end of state
+    // increment counter
     updateArray(){
         this.setState({
             inital_line_1: [
@@ -60,6 +63,7 @@ class Chart extends Component{
 
         // line1
         let inital_line_1 = this.state.inital_line_1;
+        // slicing the array EXAMPLE (5, length) if counter is 5
         let line_line1 = inital_line_1.slice(this.state.counter, inital_line_1.length)
         // line2
         let inital_line_2 = this.state.inital_line_2;
@@ -82,6 +86,7 @@ class Chart extends Component{
                 borderColor: "purple",
                 pointRadius: 4,
                 pointHitRadius: 10,                       
+                // data (line1)   
                 data: line_line1,
                 
                 },
@@ -93,7 +98,8 @@ class Chart extends Component{
                 pointHoverBackgroundColor: "brown",  
                 borderColor: "green",
                 pointRadius: 4,
-                pointHitRadius: 10,              
+                pointHitRadius: 10,
+                // data (line2)   
                 data: line_line2
                 },
                 // dataset LINE3
@@ -104,7 +110,8 @@ class Chart extends Component{
                 pointHoverBackgroundColor: "brown",  
                 borderColor: "red",
                 pointRadius: 4,
-                pointHitRadius: 10,              
+                pointHitRadius: 10, 
+                // data (line3)                
                 data: line_line3
                 }
             ]
@@ -117,6 +124,7 @@ class Chart extends Component{
                   display: true,
                   ticks: {
                     beginAtZero:true,
+                    // y axis min and max
                     min: -2,
                     max: 5 
                   }
@@ -125,7 +133,9 @@ class Chart extends Component{
         }  
         return(
                 <Line 
+                // data fro chart_data
                 data={chart_data} 
+                // options
                 options={options}   
                 />  
         )                        

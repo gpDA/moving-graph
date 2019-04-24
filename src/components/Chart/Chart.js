@@ -18,7 +18,8 @@ class Chart extends Component{
             counter: 0,
         }
         //update the function for 30 seconds
-        setInterval(this.updateArray.bind(this), 30 * 1000);
+        // TODO: MY BAD 30 --> 10
+        setInterval(this.updateArray.bind(this), 10 * 1000);
     }
 
     // updateArray with updated values

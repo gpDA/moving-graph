@@ -2,7 +2,7 @@
 # VIDEO DEMO
 
 
-[![moving graph video Demo](https://img.youtube.com/vi/ICCpoae27gY/0.jpg)](https://www.youtube.com/watch?v=ICCpoae27gY)
+[![moving graph video Demo](https://img.youtube.com/vi/XSBQxitbPEc/0.jpg)](https://www.youtube.com/watch?v=XSBQxitbPEc)
 
 
 
